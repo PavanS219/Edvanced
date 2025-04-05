@@ -1202,4 +1202,3 @@ st.sidebar.write("""
 - Dark/Light mode toggle with bulb icon
 """)
 st.sidebar.markdown("---")
-st.sidebar.write("Developed with ❤️ by BATCH E17")
