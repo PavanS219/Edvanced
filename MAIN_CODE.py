@@ -5,8 +5,9 @@ import time
 import logging
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
-from langchain.chains import load_summarize_chain
-from langchain.chains import LLMChain
+from langchain.chains.combine_documents.stuff import create_stuff_documents_chain
+from langchain.chains.summarize import load_summarize_chain
+from langchain.chains.llm import LLMChain
 from langchain_community.document_loaders import UnstructuredURLLoader
 from yt_dlp import YoutubeDL
 from langchain.schema import Document
@@ -18,9 +19,6 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, quote
-import base64
-from youtube_transcript_api import YouTubeTranscriptApi
-from urllib.parse import parse_qs, urlparse
 import json
 import random
 import string
