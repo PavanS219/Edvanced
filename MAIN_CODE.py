@@ -5,12 +5,11 @@ import time
 import logging
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
-from langchain.chains.combine_documents.stuff import create_stuff_documents_chain
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chains.llm import LLMChain
 from langchain_community.document_loaders import UnstructuredURLLoader
 from yt_dlp import YoutubeDL
-from langchain.schema import Document
+from langchain_core.documents import Document
 from fpdf import FPDF
 from datetime import datetime
 from gtts import gTTS
