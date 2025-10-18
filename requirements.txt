@@ -1,11 +1,11 @@
 pydantic
 validators
 streamlit
-langchain
+langchain==0.1.20
 langchain-groq
-langchain-community
+langchain-community==0.0.38
 yt-dlp
-langchain-core
+langchain-core==0.1.52
 langchain-text-splitters
 langdetect
 lxml
