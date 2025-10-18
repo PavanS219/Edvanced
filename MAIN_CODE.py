@@ -5,8 +5,8 @@ import time
 import logging
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
-from langchain.chains.summarize import load_summarize_chain
-from langchain.chains.llm import LLMChain
+from langchain.chains import load_summarize_chain
+from langchain.chains import LLMChain
 from langchain_community.document_loaders import UnstructuredURLLoader
 from yt_dlp import YoutubeDL
 from langchain_core.documents import Document
