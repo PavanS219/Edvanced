@@ -17,3 +17,4 @@ scikit-learn
 setuptools
 wheel
 youtube-transcript-api
+unstructured
